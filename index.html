@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #08a11dc9;
+        }
+
+       .card {
+            width: 100px;
+            height: 250px;
+            background-color: hsl(125, 71%, 80%);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(255, 195, 104, 0.1);
+            margin: 17px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+        }
+
+       .qr-code {
+            width: 650px;
+            height: 850px;
+            margin-top: 10px;
+            font-variant-position: super;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Atl. Nacional</h2>
+        <h3>El mas grande de colombia</h3>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.cesde.edu.ec/" alt="1">
+        </div>
+    </div>
+    <div class="card">
+        <h2>Tarjeta 2</h2>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.cesde.edu.ec/carreras/ingenieria-de-sistemas/" alt="2">
+        </div>
+    </div>
+    <div class="card">
+        <h2>Tarjeta 3</h2>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.cesde.edu.ec/carreras/ingenieria-industrial/" alt="3">
+        </div>
+    </div>
+</body>
+</html>
